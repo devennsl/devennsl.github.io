@@ -1,0 +1,95 @@
+/* resume.css - clean single-column resume style modeled after example */
+:root{
+  --bg: #ffffff;
+  --text: #111;
+  --muted: #555;
+  --accent: #6c7a89;
+  --maxw: 760px;
+  --pad: 28px;
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--font-sans);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.45;
+  padding:40px 16px;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+}
+
+.resume{
+  width:100%;
+  max-width:var(--maxw);
+  background:transparent;
+  padding:var(--pad);
+}
+
+/* Header */
+.res-header{
+  text-align:left;
+  margin-bottom:12px;
+}
+.name{
+  margin:0 0 6px 0;
+  font-size:34px;
+  letter-spacing:0.5px;
+  color:var(--text);
+}
+.contact{
+  margin:0 0 6px 0;
+  color:var(--muted);
+  font-size:14px;
+}
+.contact a{
+  color:inherit;
+  text-decoration:underline;
+}
+
+/* Divider */
+hr{
+  border:0;
+  height:1px;
+  background:#e3e6e8;
+  margin:14px 0 18px 0;
+}
+
+/* Sections */
+section{
+  margin-bottom:18px;
+}
+h2{
+  margin:0 0 8px 0;
+  font-size:16px;
+  text-transform:none;
+  color:var(--accent);
+  letter-spacing:0.2px;
+}
+h3{
+  margin:8px 0;
+  font-size:14px;
+  font-weight:600;
+  color:var(--text);
+}
+p{margin:4px 0;}
+.muted{color:var(--muted); font-size:14px; margin:0 0 8px 0;}
+
+ul{
+  margin:6px 0 0 18px;
+  padding:0;
+}
+li{margin:6px 0;}
+
+/* Footer text (small) */
+.res-footer{
+  margin-top:20px;
+  color:var(--muted);
+  font-size:12px;
+}

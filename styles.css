@@ -14,6 +14,7 @@ h1 {
 .projects h2 {
     /* display the h2 on its own line, not with the section blobs */
 	width: 100%;
+    text-align: center;
 }
 .project {
     /* form the section blobs */
@@ -25,11 +26,13 @@ h1 {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;  
+    text-align: center; 
 }
 .project h3 {
     /* pull the h3 text away from the left blob wall */
     margin-left: 50px;
+    text-align: center;
 }
 .project img {
     /* adjust your image sizes as needed */
